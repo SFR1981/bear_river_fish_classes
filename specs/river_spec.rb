@@ -17,6 +17,11 @@ class RiverTest < MiniTest::Test
 
   end
 
+  def test_river_has_fish
+    assert_equal([], @river.return_fish())
+
+  end
+
 
 
 end
