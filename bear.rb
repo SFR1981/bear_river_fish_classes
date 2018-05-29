@@ -17,4 +17,12 @@ def stomach_contains
   @stomach_contents
 end
 
+
+def take_a_fish(river)
+  food = river.return_fish.pop()
+  @stomach_contents << food
+  
+
+end
+
 end

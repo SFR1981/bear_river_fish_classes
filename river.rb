@@ -17,6 +17,12 @@ end
 def add_fish(name)
   @fish_collection << name
 
+end
+
+def lose_fish()
+
+  @fish_collection.pop()
+  @fish_collection
 
 end
 

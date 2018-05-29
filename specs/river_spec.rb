@@ -8,6 +8,7 @@ class RiverTest < MiniTest::Test
 
   def setup
     @river = River.new("Amazon")
+    @fish1 = Fish.new("Sharky")
   end
 
 
@@ -25,9 +26,16 @@ class RiverTest < MiniTest::Test
 
 
   def test_river_can_have_fish_added
-    @river.add_fish("Sharky")
-    assert_equal(["Sharky"], @river.return_fish())
+    @river.add_fish(@fish1)
+    assert_equal([@fish1], @river.return_fish())
 
+
+  end
+
+  def test_river_can_have_fish_removed
+    @river.add_fish(@fish1)
+    @river.lose_fish()
+    assert_equal([], @river.return_fish())
 
   end
 
