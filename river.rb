@@ -26,6 +26,9 @@ def lose_fish()
 
 end
 
+def count_fish
+  @fish_collection.length()
+end
 
 
 end
