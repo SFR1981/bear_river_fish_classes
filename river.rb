@@ -14,6 +14,12 @@ def return_fish
   @fish_collection
 end
 
+def add_fish(name)
+  @fish_collection << name
+
+
+end
+
 
 
 end
